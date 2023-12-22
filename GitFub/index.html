@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" 
+    rel="stylesheet"
+    />
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10090/10090288.png?ga=GA1.1.947130711.1703251071&">
+    <link rel="stylesheet" href="index.css">
+    <title>GitFub | Git Finder</title>
+</head>
+
+<body>
+
+
+
+
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Logo</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="mbtn">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </a></li>
+            
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+      
+      <div class="body-text d-flex">
+        <div class="body-container" style="margin-top: 1x;">
+
+            <div class="service-card" style="margin: 15px;">
+                <div class="icon-wrapper">
+                    <img src="" id="userAvatar" style="height: 100%; width: 100%; border-radius: 50%;">
+                </div>
+                <h6 style="margin-top: 10px;"><a class="card-title" href="">Treking Lead</a></h6>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Quisquam consequatur necessitatibus eaque.
+                </p>
+                <div class="follower-sec" style="justify-content: center; margin-top: 10px;">
+                    <div class="followers">
+                        <p style="width: 50%; "><a href="" id="followers">followers</a> </p>
+                      
+                    </div>
+                    <div class="following">
+                        <p style="width: 50%; "><a href="" id="following">following</a></p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="repo-container">
+
+            <div class="messageCOntainer">
+                <h6><a href="#" class="search-btn">   
+                 Search Any Desired Github User &nbsp; &nbsp; <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </a></h6>
+            </div> 
+
+        </div>
+      </div>
+
+
+
+
+<!-- The Modal -->
+<div id="modalDialog" class="modal">
+    <div class="modal-content animate-top">
+        
+        <div class="modal-body">
+            <form action="" method="post" enctype="multipart/form-data" class="DocSearchForm">
+                <div class="DocSearch-LoadingIndicator">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #F9322C;"></i>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="title" id="SearchUser" class="form-control" placeholder="Search Query"/>
+                </div>
+            </form>
+            <div class="QueryContainer" id="QueryContainer">
+               <!-- Quries  -->
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <!-- Jquery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+
+
+</html>
