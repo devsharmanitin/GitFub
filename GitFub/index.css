@@ -184,29 +184,6 @@ textarea:focus, input:focus {
 .btn:focus, .btn:hover {
     text-decoration: none;
 }
-.btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-.btn-secondary {
-    color: #fff;
-    background-color: #7c8287;
-    border-color: #7c8287;
-}
-.btn-secondary:hover {
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-}
-
-
-
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -318,16 +295,7 @@ nav .wrapper{
     display: block;
   }
  
-  .content .row .mega-links{
-    border-left: 0px;
-    padding-left: 15px;
-  }
-  .row .mega-links li{
-    margin: 0;
-  }
-  .content .row header{
-    font-size: 19px;
-  }
+  
 }
 nav input{
   display: none;
