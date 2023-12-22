@@ -44,7 +44,7 @@ $(document).ready(function(){
 
                         // Display user information
                         displayUser(userstring);
-                        console.log(user);
+                
                         // end localstorage 
 
                         let Querycontainer = $('#QueryContainer');
@@ -81,7 +81,7 @@ $(document).ready(function(){
                     },
                     error: function(error){
                         // handle the error
-                        console.log(error);
+                        // console.log(error);
                     }
                 });
             });
@@ -95,7 +95,7 @@ $(document).ready(function(){
 // Display User 
 function displayUser(userString){
     const user = JSON.parse(userString);
-    // console.log(user , "USeeeeee");
+
     $('.service-card').show();
     $('#userImage').attr('src', user.avatar_url);
     $('#userAvatar').attr('src', user.avatar_url);
@@ -111,7 +111,7 @@ function displayUser(userString){
 
 // Display Repo 
 function displayRepo(userString){
-    console.log("Working");
+
     const user = JSON.parse(userString);
     $.ajax({
         data: {
@@ -122,15 +122,14 @@ function displayRepo(userString){
         type: 'GET' ,
         success: function(response){
             // handle the success of repo url 
-            console.log(response , "success Repo");
-            console.log(response.length , "len");
+          
             $('.repo-container').empty();
             for (var i=0 ; i < response.length ; i++){
                 var repo = response[i]
                 var desc = repo.description
                 if(desc){
                     var words = desc.split(' ');
-                    var shortenedDescription = words.slice(0, 30).join(' ') + ' ...';
+                    var shortenedDescription = words.slice(0, 25).join(' ') + ' ...';
                 }else{
                     shortenedDescription = '';
                 }
@@ -167,7 +166,7 @@ function displayRepo(userString){
             }
         },
         error: function(error){
-            console.log(error) , "error Repo";
+            // console.log(error) , 
         }
     });
 }
